@@ -1,0 +1,10 @@
+.env
+.vscode
+.idea
+.DS_Store
+__pycache__
+*.env
+*.pyc
+*.zip
+
+src/data/*

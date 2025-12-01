@@ -1,0 +1,3 @@
+openai
+python-dotenv
+pyouter==0.1.1
