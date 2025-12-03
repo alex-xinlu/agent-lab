@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+
 from pyouter.app import App
 from pyouter.router import Router
 
@@ -37,6 +39,9 @@ def run():
         config=config, 
         parser=args_parser
     )
+
+    # 加载 .env 文件中的环境变量
+    load_dotenv()
 
     print("@init log...")
     init_log(config, options)
