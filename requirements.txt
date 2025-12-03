@@ -1,4 +1,4 @@
 openai
 python-dotenv
-pyouter==0.1.1
+pyouter==0.1.0
 google-search-results
