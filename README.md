@@ -1,7 +1,7 @@
 # agent-lab
 
 ## 简介
-该项目主要用于 agent 的学习
+该项目主要用于 agent 的学习、实验与探索
 
 ## 目录结构说明
 * src/chat: prompt 工程相关任务或功能
