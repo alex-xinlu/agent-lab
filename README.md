@@ -32,18 +32,18 @@ pyouter 介绍博客：
 ```
 [pyouter] ->router2: agent_lab
 [pyouter]   ->router2: agent_lab.test
-[pyouter]   ->router2: agent_lab.test
-[pyouter]   ->router2: agent_lab.test
 [pyouter]     ->router2: agent_lab.test.llm
 [pyouter]     ->router2: agent_lab.test.tools
 [pyouter]     ->router2: agent_lab.test.agent
 [pyouter]       ->action: agent_lab.test.llm.hello_agent
 [pyouter]       ->action: agent_lab.test.tools.search
 [pyouter]       ->action: agent_lab.test.agent.react
+[pyouter]       ->action: agent_lab.test.agent.plan_and_solve
 ```
 
 ## 当前支持的 agent（范式）
 - [x] ReAct
+- [x] Plan and Solve
 
 ## 当前支持的工具
 - [x] search: SerpApi
