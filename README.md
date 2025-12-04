@@ -27,7 +27,7 @@ pyouter 介绍博客：
 * agent: 表示这是一个 agent
 * react: 表示这是 ReAct agent
 
-若要查看所有支持的命令，可执行 `python main.py chat -i` 进行打印，如下所示。
+若要查看所有支持的命令，可执行 `python main.py agent_lab -i` 进行打印，如下所示。
 其中的 action 就是树状结构的叶子结点，也就是所有可执行的功能，具体如下所示 (2025-12-03 打印)：
 ```
 [pyouter] ->router2: agent_lab
