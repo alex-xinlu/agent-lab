@@ -1,4 +1,4 @@
-# hello-agent-practise
+# agent-lab
 
 ## 简介
 该项目主要用于 agent 的学习
@@ -21,8 +21,8 @@ pyouter 介绍博客：
 * [项目框架管理工具pyouter的实践](https://blog.csdn.net/qq_43576728/article/details/140461789)
 * [开源小项目：pyouter 0.0.1 发布](https://blog.csdn.net/huanhuilong/article/details/121481377)
 
-命令示例：`python main.py hello_agent.test.agent.react`，测试 ReAct agent，其中 `hello_agent.test.agent.react` 解释如下：
-* hello_agent: 项目根结点
+命令示例：`python main.py agent_lab.test.agent.react`，测试 ReAct agent，其中 `agent_lab.test.agent.react` 解释如下：
+* agent_lab: 项目根结点
 * test: 表示这是一项功能测试
 * agent: 表示这是一个 agent
 * react: 表示这是 ReAct agent
@@ -30,20 +30,24 @@ pyouter 介绍博客：
 若要查看所有支持的命令，可执行 `python main.py chat -i` 进行打印，如下所示。
 其中的 action 就是树状结构的叶子结点，也就是所有可执行的功能，具体如下所示 (2025-12-03  打印)：
 ```
-[pyouter] ->router2: hello_agent
-[pyouter]   ->router2: hello_agent.test
-[pyouter]   ->router2: hello_agent.test
-[pyouter]   ->router2: hello_agent.test
-[pyouter]     ->router2: hello_agent.test.llm
-[pyouter]     ->router2: hello_agent.test.tools
-[pyouter]     ->router2: hello_agent.test.agent
-[pyouter]       ->action: hello_agent.test.llm.hello_agent
-[pyouter]       ->action: hello_agent.test.tools.search
-[pyouter]       ->action: hello_agent.test.agent.react
+[pyouter] ->router2: agent_lab
+[pyouter]   ->router2: agent_lab.test
+[pyouter]   ->router2: agent_lab.test
+[pyouter]   ->router2: agent_lab.test
+[pyouter]     ->router2: agent_lab.test.llm
+[pyouter]     ->router2: agent_lab.test.tools
+[pyouter]     ->router2: agent_lab.test.agent
+[pyouter]       ->action: agent_lab.test.llm.hello_agent
+[pyouter]       ->action: agent_lab.test.tools.search
+[pyouter]       ->action: agent_lab.test.agent.react
 ```
 
 ## 当前支持的 agent（范式）
 - [x] ReAct
+
+## 当前支持的工具
+- [x] search: SerpApi
+- [x] time: get_current_date
 
 ## 注意
 需要在项目的根目录下，根据 `.env.example` 配置 `.env` 文件中的参数（`.env` 文件自行在项目根目录下新建）。

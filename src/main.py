@@ -53,7 +53,7 @@ def run():
 
     app.use(
         router=Router(
-            hello_agent=main_dispatch()
+            agent_lab=main_dispatch()
         )
     )
 
