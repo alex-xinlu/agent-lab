@@ -39,15 +39,16 @@ pyouter 介绍博客：
 [pyouter]       ->action: agent_lab.test.tools.search
 [pyouter]       ->action: agent_lab.test.agent.react
 [pyouter]       ->action: agent_lab.test.agent.plan_and_solve
+[pyouter]       ->action: agent_lab.test.agent.reflection
 ```
 
 ## 当前支持的 agent（范式）
-- [x] ReAct
-- [x] Plan and Solve
+- [x] ReAct: `python main.py agent_lab.test.agent.react`
+- [x] Plan and Solve: `python main.py agent_lab.test.agent.plan_and_solve`
+- [x] Reflection: `python main.py agent_lab.test.agent.reflection`
 
 ## 当前支持的工具
-- [x] search: SerpApi
-- [x] time: get_current_date
+- [x] search - SerpApi: `python main.py agent_lab.test.tools.search`
 
 ## 注意
 需要在项目的根目录下，根据 `.env.example` 配置 `.env` 文件中的参数（`.env` 文件自行在项目根目录下新建）。
