@@ -2,3 +2,6 @@ openai
 python-dotenv
 pyouter==0.1.0
 google-search-results
+langchain
+langgraph
+langchain-openai
