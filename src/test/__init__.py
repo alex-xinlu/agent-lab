@@ -11,6 +11,7 @@ def dispatch():
     from test.agent.test_react_agent import test_react_agent
     from test.agent.test_plan_and_solve_agent import test_plan_and_solve_agent
     from test.agent.test_reflection_agent import test_reflection_agent
+    from test.agent.test_langgraph_agent import test_dialogue_system
 
     router = Router(
         llm = Router(
@@ -22,7 +23,10 @@ def dispatch():
         agent = Router(
             react = test_react_agent,
             plan_and_solve = test_plan_and_solve_agent,
-            reflection = test_reflection_agent
+            reflection = test_reflection_agent,
+            langgraph = Router(
+                dialogue_system = test_dialogue_system
+            )
         )
     )
 
