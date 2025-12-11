@@ -12,6 +12,7 @@ def dispatch():
     from test.agent.test_plan_and_solve_agent import test_plan_and_solve_agent
     from test.agent.test_reflection_agent import test_reflection_agent
     from test.agent.test_langgraph_agent import test_dialogue_system
+    from test.agent.test_autogen_agent import test_software_team
 
     router = Router(
         llm = Router(
@@ -26,6 +27,9 @@ def dispatch():
             reflection = test_reflection_agent,
             langgraph = Router(
                 dialogue_system = test_dialogue_system
+            ),
+            autogen = Router(
+                software_team = test_software_team
             )
         )
     )

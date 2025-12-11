@@ -43,9 +43,10 @@ def run():
     # 加载 .env 文件中的环境变量
     load_dotenv()
 
-    print("@init log...")
-    init_log(config, options)
-    print("")
+    # 暂时不需要日志
+    # print("@init log...")
+    # init_log(config, options)
+    # print("")
 
     print("@init data dir...")
     init_path(options)
