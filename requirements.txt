@@ -13,3 +13,4 @@ requests>=2.31.0
 pandas>=2.0.0
 plotly>=5.15.0
 asyncio
+streamlit_autorefresh
